@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "datasource",
+    "type": "java.lang.String",
+    "description": "A description for 'datasource'"
+  },
+  {
+    "name": "pharmacy.eureka.server.resolve-dns-with-cloud-map",
+    "type": "java.lang.Boolean",
+    "description": "A description for 'pharmacy.eureka.server.resolve-dns-with-cloud-map'"
+  },
+  {
+    "name": "pharmacy.eureka.instance.use-ecs-metadata-host-ip",
+    "type": "java.lang.Boolean",
+    "description": "A description for 'pharmacy.eureka.instance.use-ecs-metadata-host-ip'"
+  }
+]}

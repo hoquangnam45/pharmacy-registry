@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: pharmacy-registry
+management:
+  endpoint:
+    health:
+      show-details: always
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://${spring.cloud.client.ip-address}:8761/eureka
+  instance:
+    preferIpAddress: true
+    instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
